@@ -7,8 +7,8 @@ export default function Home({ posts }) {
   return (
     <div className="container mx-auto mb-8 px-10">
       <Head>
-        <title>CMS Blog</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <title>TBlog</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <FeaturedPost />
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
@@ -33,5 +33,8 @@ export async function getStaticProps() {
 
   return {
     props: { posts },
+    revalidate: 60,
   }
 }
+
+// export

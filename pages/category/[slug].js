@@ -15,7 +15,7 @@ const CategoryPost = ({ posts }) => {
   return (
     <>
       <Head>
-        <title>{`Categories`}</title>
+        <title>TBlog - Categories</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container mx-auto mb-8 px-10">
